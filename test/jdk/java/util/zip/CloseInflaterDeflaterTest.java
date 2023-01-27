@@ -21,6 +21,12 @@
  * questions.
  */
 
+/*
+ * ===========================================================================
+ * (c) Copyright IBM Corp. 2023, 2023 All Rights Reserved
+ * ===========================================================================
+ */
+
 /**
  * @test
  * @bug 8193682 8278794 8284771
@@ -46,7 +52,7 @@ import static org.testng.Assert.assertThrows;
 public class CloseInflaterDeflaterTest {
 
     // Number of bytes to write/read from Deflater/Inflater
-    private static final int INPUT_LENGTH= 512;
+    private static final int INPUT_LENGTH= 1024;
     // OutputStream that will throw an exception during a write operation
     private static OutputStream outStream = new OutputStream() {
         @Override
